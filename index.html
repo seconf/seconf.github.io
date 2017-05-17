@@ -1,1 +1,758 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SECONF</title>
+
+	<!-- Demo styling -->
+	<link href="res/css/jq.css" rel="stylesheet">
+
+	<!-- jQuery: required (tablesorter works with jQuery 1.2.3+) -->
+	<script src="res/js/jquery-1.2.6.min.js"></script>
+
+	<!-- Pick a theme, load the plugin & initialize plugin -->
+	<link href="dist/css/theme.default.min.css" rel="stylesheet">
+	<script src="dist/js/jquery.tablesorter.min.js"></script>
+	<script src="dist/js/jquery.tablesorter.widgets.min.js"></script>
+	<script>
+	$(function(){
+		$('table').tablesorter({
+			widgets        : ['zebra', 'columns'],
+			usNumberFormat : false,
+			sortReset      : true,
+			sortRestart    : true
+		});
+	});
+	</script>
+
+</head>
+<body>
+<div class="demo">
+	<h1>Software<em>Engineering</em>Conference<em>List</em</a></h1>
+	<p>By Jialiang Chang
+	</p>
+</div>
+	<table class="tablesorter">
+		<thead>
+		  <tr>
+		    <th class="tg-yw4l">Conference abbr</th>
+		    <th class="tg-yw4l">Conference name</th>
+		    <th class="tg-yw4l">Publisher</th>
+		    <th class="tg-yw4l">Website</th>
+		    <th class="tg-yw4l">Year</th>
+		    <th class="tg-yw4l">Conference website</th>
+		    <th class="tg-yw4l">Full paper deadline</th>
+		    <th class="tg-yw4l">Conference date</th>
+		    <th class="tg-yw4l">Location</th>
+		    <th class="tg-yw4l">Class in CCF</th>
+		    <th class="tg-yw4l">Note</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+    <td class="tg-yw4l">FSE/ESEC</td>
+    <td class="tg-yw4l">ACM SIGSOFT Symposium on the Foundation of Software Engineering/ European Software Engineering Conference</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/sigsoft/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://esec-fse17.uni-paderborn.de/</td>
+    <td class="tg-yw4l">20170227</td>
+    <td class="tg-yw4l">20170904</td>
+    <td class="tg-yw4l">PADERBORN, GERMANY</td>
+    <td class="tg-yw4l">A</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">OOPSLA</td>
+    <td class="tg-yw4l">Conference on Object-Oriented Programming Systems, Languages, and Applications</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/oopsla/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://2017.splashcon.org/</td>
+    <td class="tg-yw4l">20170417</td>
+    <td class="tg-yw4l">20171022</td>
+    <td class="tg-yw4l">Vancouver, Canada</td>
+    <td class="tg-yw4l">A</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICSE</td>
+    <td class="tg-yw4l">International Conference on Software Engineering</td>
+    <td class="tg-yw4l">ACM/IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icse/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://icse2017.gatech.edu/</td>
+    <td class="tg-yw4l">20160826</td>
+    <td class="tg-yw4l">20170520</td>
+    <td class="tg-yw4l">Buenos Aires, Argentina</td>
+    <td class="tg-yw4l">A</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">OSDI</td>
+    <td class="tg-yw4l">USENIX Symposium on Operating Systems Design and Implementations</td>
+    <td class="tg-yw4l">USENIX</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/osdi/</td>
+    <td class="tg-yw4l">2018</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">Carlsbad, CA</td>
+    <td class="tg-yw4l">A</td>
+    <td class="tg-yw4l">biannual conference</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">PLDI</td>
+    <td class="tg-yw4l">ACM SIGPLAN Symposium on Programming Language Design &amp; Implementation</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/pldi/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://conf.researchr.org/home/pldi-2017</td>
+    <td class="tg-yw4l">20161115</td>
+    <td class="tg-yw4l">20170618</td>
+    <td class="tg-yw4l">Barcelona,Spain</td>
+    <td class="tg-yw4l">A</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">POPL</td>
+    <td class="tg-yw4l">ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/popl/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://conf.researchr.org/home/POPL-2017</td>
+    <td class="tg-yw4l">20160706</td>
+    <td class="tg-yw4l">20170115</td>
+    <td class="tg-yw4l">Paris,France</td>
+    <td class="tg-yw4l">A</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SOSP</td>
+    <td class="tg-yw4l">ACM Symposium on Operating Systems Principles</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/sosp/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">https://www.sigops.org/sosp/sosp17/</td>
+    <td class="tg-yw4l">20170421</td>
+    <td class="tg-yw4l">20171029</td>
+    <td class="tg-yw4l">Shanghai, China</td>
+    <td class="tg-yw4l">A</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ASE</td>
+    <td class="tg-yw4l">International Conference on Automated Software Engineering</td>
+    <td class="tg-yw4l">IEEE/ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/kbse/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://ase2017.org/</td>
+    <td class="tg-yw4l">20170512</td>
+    <td class="tg-yw4l">20171030</td>
+    <td class="tg-yw4l">Urbana-Champaign, Illinois</td>
+    <td class="tg-yw4l">A</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ECOOP</td>
+    <td class="tg-yw4l">European Conference on Object-Oriented Programming</td>
+    <td class="tg-yw4l">AITO</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/ecoop/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://2017.ecoop.org/</td>
+    <td class="tg-yw4l">20170113</td>
+    <td class="tg-yw4l">20170618</td>
+    <td class="tg-yw4l">Barcelona,Spain</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ETAPS</td>
+    <td class="tg-yw4l">European Joint Conferences on Theory and Practice of Software</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/etaps/</td>
+    <td class="tg-yw4l">2018</td>
+    <td class="tg-yw4l">http://www.etaps.org/</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">20180414</td>
+    <td class="tg-yw4l">Thessaloniki, Greece</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">FM</td>
+    <td class="tg-yw4l">World Congress on Formal Methods</td>
+    <td class="tg-yw4l">FME</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/fm/</td>
+    <td class="tg-yw4l">2018</td>
+    <td class="tg-yw4l">http://www.fmeurope.org/?p=613</td>
+    <td class="tg-yw4l">20170619</td>
+    <td class="tg-yw4l">20180714</td>
+    <td class="tg-yw4l">Oxford, UK</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l">Not held at 2017</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICPC</td>
+    <td class="tg-yw4l">IEEE International Conference on Program Comprehension</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/iwpc/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://www2.unibas.it/icpc2017/</td>
+    <td class="tg-yw4l">20170125</td>
+    <td class="tg-yw4l">20170522</td>
+    <td class="tg-yw4l">Buenos Aires, Argentina</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">RE</td>
+    <td class="tg-yw4l">IEEE International Requirement Engineering Conference</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/re/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://ctp.di.fct.unl.pt/RE2017/</td>
+    <td class="tg-yw4l">20170217</td>
+    <td class="tg-yw4l">20170904</td>
+    <td class="tg-yw4l">Lisbon, Portugal</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">CAiSE</td>
+    <td class="tg-yw4l">International Conference on Advanced Information Systems Engineering</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/caise/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://caise2017.paluno.de/welcome/</td>
+    <td class="tg-yw4l">20161204</td>
+    <td class="tg-yw4l">20170612</td>
+    <td class="tg-yw4l">Essen,Germany</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICFP</td>
+    <td class="tg-yw4l">International Conference on Function Programming</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icfp/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://conf.researchr.org/home/icfp-2017</td>
+    <td class="tg-yw4l">20170227</td>
+    <td class="tg-yw4l">20170909</td>
+    <td class="tg-yw4l">Oxford, UK</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">LCTES</td>
+    <td class="tg-yw4l">International Conference on Languages, Compilers, Tools and Theory for Embedded Systems</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/lctrts/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://conf.researchr.org/track/LCTES-2017/LCTES-2017-papers</td>
+    <td class="tg-yw4l">20170214</td>
+    <td class="tg-yw4l">20170621</td>
+    <td class="tg-yw4l">Barcelona, Spain</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">MoDELS</td>
+    <td class="tg-yw4l">International Conference on Model Driven Engineering Languages and Systems</td>
+    <td class="tg-yw4l">ACM, IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/models/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://www.cs.utexas.edu/models2017</td>
+    <td class="tg-yw4l">20170421</td>
+    <td class="tg-yw4l">20170917</td>
+    <td class="tg-yw4l">Austin, Texas</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">CP</td>
+    <td class="tg-yw4l">International Conference on Principles and Practice of Constraint Programming</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/cp/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://cp2017.a4cp.org/</td>
+    <td class="tg-yw4l">20170430</td>
+    <td class="tg-yw4l">20170828</td>
+    <td class="tg-yw4l">Melbourne, Australia</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICSOC</td>
+    <td class="tg-yw4l">International Conference on Service Oriented Computing</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icsoc/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://www.icsoc.spilab.es/</td>
+    <td class="tg-yw4l">20170606</td>
+    <td class="tg-yw4l">20171113</td>
+    <td class="tg-yw4l">Malaga, Spain</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICSME</td>
+    <td class="tg-yw4l">International Conference on Software Maintenance and Evolution</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icsm/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">https://icsme2017.github.io/</td>
+    <td class="tg-yw4l">20170406</td>
+    <td class="tg-yw4l">20170917</td>
+    <td class="tg-yw4l">Shanghai, China</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">VMCAI</td>
+    <td class="tg-yw4l">International Conference on Verification, Model Checking, and Abstract Interpretation</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/vmcai/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://conf.researchr.org/home/VMCAI-2017</td>
+    <td class="tg-yw4l">20160921</td>
+    <td class="tg-yw4l">20170115</td>
+    <td class="tg-yw4l">Paris, France</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICWS</td>
+    <td class="tg-yw4l">International Conference on Web Services (Research Track)</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icws/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://icws.org/2017/about.html</td>
+    <td class="tg-yw4l">20170112</td>
+    <td class="tg-yw4l">20170625</td>
+    <td class="tg-yw4l">Honolulu, HI</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SAS</td>
+    <td class="tg-yw4l">International Static Analysis Symposium</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/sas/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://staticanalysis.org/sas2017/sas2017.html</td>
+    <td class="tg-yw4l">20170420</td>
+    <td class="tg-yw4l">20170830</td>
+    <td class="tg-yw4l">New York City, NY</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ISSRE</td>
+    <td class="tg-yw4l">International Symposium on Software Reliability Engineering</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/issre/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://issre.net/</td>
+    <td class="tg-yw4l">20170505</td>
+    <td class="tg-yw4l">20171023</td>
+    <td class="tg-yw4l">Toulouse, France</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ISSTA</td>
+    <td class="tg-yw4l">International Symposium on Software Testing and Analysis</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/issta/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://conf.researchr.org/home/issta-2017</td>
+    <td class="tg-yw4l">20170203</td>
+    <td class="tg-yw4l">20170709</td>
+    <td class="tg-yw4l">Santa Barbara, California</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Middleware</td>
+    <td class="tg-yw4l">Conference on middleware</td>
+    <td class="tg-yw4l">ACM/IFIP/ USENIX</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/middleware/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://2017.middleware-conference.org/</td>
+    <td class="tg-yw4l">20170519</td>
+    <td class="tg-yw4l">20171211</td>
+    <td class="tg-yw4l">Las Vegas, Nevada</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SANER</td>
+    <td class="tg-yw4l">International Conference on Software Analysis, Evolution, and Reengineering</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/wcre/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://saner.aau.at/</td>
+    <td class="tg-yw4l">20161017</td>
+    <td class="tg-yw4l">20170220</td>
+    <td class="tg-yw4l">Klagenfurt, Austria</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">HotOS</td>
+    <td class="tg-yw4l">USENIX Workshop on Hot Topics in Operating Systems</td>
+    <td class="tg-yw4l">USENIX</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/hotos/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">https://www.sigops.org/hotos/hotos17/</td>
+    <td class="tg-yw4l">20170125</td>
+    <td class="tg-yw4l">20170507</td>
+    <td class="tg-yw4l">Whistler, BC</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ESEM</td>
+    <td class="tg-yw4l">International Symposium on Empirical Software Engineering and Measurement</td>
+    <td class="tg-yw4l">ACM/IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/esem/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://www.scs.ryerson.ca/eseiw2017/ESEM/index.html</td>
+    <td class="tg-yw4l">20170407</td>
+    <td class="tg-yw4l">20171109</td>
+    <td class="tg-yw4l">Toronto,Canada</td>
+    <td class="tg-yw4l">B</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">PASTE</td>
+    <td class="tg-yw4l">ACMSIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/paste/</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l">Not held since 2014</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">APLAS</td>
+    <td class="tg-yw4l">Asian Symposium on Programming Languages and Systems</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/aplas/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">https://www-aplas.github.io/</td>
+    <td class="tg-yw4l">20170616</td>
+    <td class="tg-yw4l">20171127</td>
+    <td class="tg-yw4l">Suzhou, China</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">APSEC</td>
+    <td class="tg-yw4l">Asia-Pacific Software Engineering Conference</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/apsec/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://www.apsec2017.org/</td>
+    <td class="tg-yw4l">20170707</td>
+    <td class="tg-yw4l">20171204</td>
+    <td class="tg-yw4l">Nanjing, China</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">COMPSAC</td>
+    <td class="tg-yw4l">International Computer Software and Applications Conference</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/compsac/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">https://www.computer.org/web/compsac2017</td>
+    <td class="tg-yw4l">20170113</td>
+    <td class="tg-yw4l">20170704</td>
+    <td class="tg-yw4l">Torino, Italy</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICECCS</td>
+    <td class="tg-yw4l">IEEE International Conference on Engineering of Complex Computer Systems</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/iceccs/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">https://iceccs.github.io/2017/</td>
+    <td class="tg-yw4l">20170619</td>
+    <td class="tg-yw4l">20171105</td>
+    <td class="tg-yw4l">Fukuoka, Japan</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SCAM</td>
+    <td class="tg-yw4l">IEEE International Working Conference on Source Code Analysis and Manipulation</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/scam/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://www.ieee-scam.org/2017/</td>
+    <td class="tg-yw4l">20170615</td>
+    <td class="tg-yw4l">20170917</td>
+    <td class="tg-yw4l">Shanghai, China</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICFEM</td>
+    <td class="tg-yw4l">International Conference on Formal Engineering Methods</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icfem/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://ictt.xidian.edu.cn/icfem2017/</td>
+    <td class="tg-yw4l">20170514</td>
+    <td class="tg-yw4l">20171113</td>
+    <td class="tg-yw4l">Xi'an,China</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">TOOLS</td>
+    <td class="tg-yw4l">International Conference on Objects, Models, Components, Patterns</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/tools/index.html</td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l">Not held since 2013</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">PEPM</td>
+    <td class="tg-yw4l">ACM SIGPLAN Symposium on Partial Evaluation and Semantics Based Programming Manipulation</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/pepm/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://conf.researchr.org/track/pepm-2017/pepm-workshop#About</td>
+    <td class="tg-yw4l">20160930</td>
+    <td class="tg-yw4l">20170116</td>
+    <td class="tg-yw4l">Paris, France</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">QRS</td>
+    <td class="tg-yw4l">The IEEE International Conference on Software Quality, Reliability and Security</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://paris.utdallas.edu/qrs/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://paris.utdallas.edu/qrs17/</td>
+    <td class="tg-yw4l">20170308</td>
+    <td class="tg-yw4l">20170725</td>
+    <td class="tg-yw4l">Prague, Czech Republic</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SEKE</td>
+    <td class="tg-yw4l">International Conference on Software Engineering and Knowledge Engineering</td>
+    <td class="tg-yw4l">KSI</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/seke/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://ksiresearchorg.ipage.com/seke/seke17.html</td>
+    <td class="tg-yw4l">20170301</td>
+    <td class="tg-yw4l">20170705</td>
+    <td class="tg-yw4l">Pittsburgh, PA</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICSR</td>
+    <td class="tg-yw4l">International Conference on Software Reuse</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icsr/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://icsr2017.ufba.br/</td>
+    <td class="tg-yw4l">20161212</td>
+    <td class="tg-yw4l">20170529</td>
+    <td class="tg-yw4l">Salvador, Brazil</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICWE</td>
+    <td class="tg-yw4l">International Conference on Web Engineering</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icwe/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://icwe2017.webengineering.org/</td>
+    <td class="tg-yw4l">20170122</td>
+    <td class="tg-yw4l">20170605</td>
+    <td class="tg-yw4l">Rome, Italy</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SPIN</td>
+    <td class="tg-yw4l">International SPIN Workshop on Model Checking of Software</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/spin/index.html</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://amity.edu/spin2017/index.html</td>
+    <td class="tg-yw4l">20161205</td>
+    <td class="tg-yw4l">20170203</td>
+    <td class="tg-yw4l">Noida, Delh-NCR</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">LOPSTR</td>
+    <td class="tg-yw4l">International Symposium on Logic-based Program Synthesis and Transformation</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/lopstr/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">https://www.sci.unich.it/lopstr17/</td>
+    <td class="tg-yw4l">20170613</td>
+    <td class="tg-yw4l">20171010</td>
+    <td class="tg-yw4l">Namur, Belgium</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">TASE</td>
+    <td class="tg-yw4l">International Symposium on Theoretical Aspects of Software Engineering</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/tase/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://tase2017.unice.fr/</td>
+    <td class="tg-yw4l">20170319</td>
+    <td class="tg-yw4l">20170913</td>
+    <td class="tg-yw4l">Nice, France</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICST</td>
+    <td class="tg-yw4l">The IEEE International Conference on Software Testing, Verification and Validation</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/icst/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://aster.or.jp/conference/icst2017/</td>
+    <td class="tg-yw4l">20160930</td>
+    <td class="tg-yw4l">20170313</td>
+    <td class="tg-yw4l">Tokyo, Japan</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ATVA</td>
+    <td class="tg-yw4l">International Symposium on Automated Technology for Verification and Analysis</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/atva/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://www.iarcs.org.in/atva2017/</td>
+    <td class="tg-yw4l">20170421</td>
+    <td class="tg-yw4l">20171003</td>
+    <td class="tg-yw4l">Pune, India</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ISPASS</td>
+    <td class="tg-yw4l">IEEE International Symposium on Performance Analysis of Systems and Software</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/ispass/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://www.ispass.org/ispass2017/</td>
+    <td class="tg-yw4l">20161014</td>
+    <td class="tg-yw4l">20170424</td>
+    <td class="tg-yw4l">Santa Rosa, California</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">SCC</td>
+    <td class="tg-yw4l">International Conference on Service Computing</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/IEEEscc/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://thescc.org/2017/</td>
+    <td class="tg-yw4l">20170119</td>
+    <td class="tg-yw4l">20170625</td>
+    <td class="tg-yw4l">Honolulu, HI</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">ICSSP</td>
+    <td class="tg-yw4l">International Conference on Software and System Process</td>
+    <td class="tg-yw4l">ISPA</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/ispw/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://icssp-conferences.org/</td>
+    <td class="tg-yw4l">20170115</td>
+    <td class="tg-yw4l">20170705</td>
+    <td class="tg-yw4l">Paris, France</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">MSR</td>
+    <td class="tg-yw4l">Working Conference on Mining Software Repositories</td>
+    <td class="tg-yw4l">IEEE/ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/msr/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://2017.msrconf.org/#/home</td>
+    <td class="tg-yw4l">20170210</td>
+    <td class="tg-yw4l">20170520</td>
+    <td class="tg-yw4l">Buenos Aires, Argentina</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">REFSQ</td>
+    <td class="tg-yw4l">Requirements Engineering: Foundation for Software Quality</td>
+    <td class="tg-yw4l">Springer</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/refsq/</td>
+    <td class="tg-yw4l">2018</td>
+    <td class="tg-yw4l">https://refsq.org/2018/welcome/</td>
+    <td class="tg-yw4l">20171002</td>
+    <td class="tg-yw4l">20180319</td>
+    <td class="tg-yw4l">Utrecht, The Netherlands</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">WICSA</td>
+    <td class="tg-yw4l">Working IEEE/IFIP Conference on Software Architecture</td>
+    <td class="tg-yw4l">IEEE</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/wicsa/</td>
+    <td class="tg-yw4l">2018</td>
+    <td class="tg-yw4l">http://icsa-conferences.org/2018/</td>
+    <td class="tg-yw4l">20180125</td>
+    <td class="tg-yw4l">20180430</td>
+    <td class="tg-yw4l">SEATTLE, USA</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">EASE</td>
+    <td class="tg-yw4l">Evaluation and Assessment in Software Engineering</td>
+    <td class="tg-yw4l">ACM</td>
+    <td class="tg-yw4l">http://dblp.uni-trier.de/db/conf/ease/</td>
+    <td class="tg-yw4l">2017</td>
+    <td class="tg-yw4l">http://ease2017.bth.se/</td>
+    <td class="tg-yw4l">20170205</td>
+    <td class="tg-yw4l">20170615</td>
+    <td class="tg-yw4l">Karlskrona, Sweden</td>
+    <td class="tg-yw4l">C</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+		</tbody>
+</table>
+
+
+</body></html>
